@@ -1,0 +1,41 @@
+#Authour: Jun Wu
+#Create Date: 09-26-2011
+
+#This is the place to put configurations for IR project.
+#Pls don't leave space before or after "=", like para1 = 1. Currently it is not supported.
+
+#The root dir for news and wiki
+data_dir=/home/nishant/Data
+
+#The dir to store generated dictionaries
+dict_dir=/home/nishant/op1/dictionary
+
+#The dir to store generated semwiki files
+semwiki_dir=/home/nishant/op1/SemWiki
+
+#The dir to store inverted index files
+base_index_dir=/home/nishant/op1/inv_index/
+
+#The dir to store forward index files
+frwd_indx_folder=/home/nishant/op1/fwd_index/
+
+#The dir to store the inverted index files for terms
+term_inv_index_folder=/home/nishant/op1/term_inv_index/
+
+#This is the max barrel numbers for an index file
+partition_max_size=1
+
+#When posting list reaches this size, it will flush all the posting lists in memory into index partition file.
+posting_list_max_size=10
+
+#Location of the Query batch file
+query_batch_file=/home/nishant/Downloads/topics.TREC
+
+#The folder to store the output of Queries
+query_out=/home/nishant/Output/Query
+
+#The model to use for query processing
+query_model=okapi
+
+#Zone
+zone=title
